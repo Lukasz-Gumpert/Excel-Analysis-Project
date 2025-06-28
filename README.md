@@ -51,20 +51,17 @@ Each query underwent several cleaning and restructuring steps — I adjusted dat
 
 - data_jobs_all:
 
-![001](https://github.com/user-attachments/assets/75fb5f32-e243-4d03-90f9-731e0f06dfaa)
+![001](https://github.com/user-attachments/assets/15c81e3f-5883-4045-8587-084019f14edc)
 
 - data_jobs_skills:
 
-![002](https://github.com/user-attachments/assets/eaa1c839-9e3d-4642-b391-f44bbef18da7)
+![002](https://github.com/user-attachments/assets/9fd076aa-81d7-49dd-9f8e-1afe1fd4db04)
 
-📊 Analytical Findings
+### 📊 Analysis
 
-💡 Key Observations
-📈 A clear trend emerged: job postings listing more required skills tended to offer higher median salaries — a pattern especially noticeable in roles like Senior Data Engineer and Data Scientist.
+A clear trend emerged: job postings listing more required skills tended to offer higher median salaries — a pattern especially noticeable in roles like Senior Data Engineer and Data Scientist. 
+On the flip side, positions such as Business Analyst, which often list fewer required skills, generally came with lower salary offerings. This indicates that specialized or broader technical skill sets may be more highly valued in the job market.
 
-💼 On the flip side, positions such as Business Analyst, which often list fewer required skills, generally came with lower salary offerings. This indicates that specialized or broader technical skill sets may be more highly valued in the job market.
+![image](https://github.com/user-attachments/assets/f8a93c52-c770-4ba6-acef-6970767ce3e7)
 
-(see 2_Project_Analysis_Chart1.png)
-
-🤔 What This Means
 The analysis suggests that expanding your skillset — particularly with in-demand and relevant tools — can significantly enhance your earning potential, especially if you're targeting senior or technical roles.
