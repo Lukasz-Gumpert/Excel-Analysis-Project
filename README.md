@@ -65,3 +65,26 @@ On the flip side, positions such as Business Analyst, which often list fewer req
 ![image](https://github.com/user-attachments/assets/f8a93c52-c770-4ba6-acef-6970767ce3e7)
 
 The analysis suggests that expanding your skillset — particularly with in-demand and relevant tools — can significantly enhance your earning potential, especially if you're targeting senior or technical roles.
+
+## 2️⃣ How Do Data Job Salaries Vary by Region?
+
+## Skill: PivotTables & DAX
+
+### Pivot Table Creation
+
+To explore regional salary differences, I used Power Pivot to build a data model and generated a PivotTable.
+I placed job_title_short into the row labels and used salary_year_avg as the values field to summarize the data.
+
+![image](https://github.com/user-attachments/assets/6da43e9d-3ab6-4e77-946f-c7f681a7b5db)
+
+![image](https://github.com/user-attachments/assets/23b15f63-4af7-4861-bd23-037016517fe5)
+
+
+### 📊 Analysis
+
+Roles such as Senior Data Engineer and Data Scientist offer significantly higher median salaries both within the U.S. and abroad — a testament to the global demand for advanced data skills.
+Notably, there's a considerable salary gap between U.S. and non-U.S. positions, particularly in tech-heavy roles. This likely reflects the concentration of high-paying tech industries within the U.S. market.
+
+![image](https://github.com/user-attachments/assets/8b7d6392-8a40-4e58-b2c0-70a23fee4d41)
+
+Understanding these geographic salary trends is crucial for both professionals and employers. It supports more informed decision-making around job location, remote opportunities, and compensation negotiations in a globally distributed job market.
