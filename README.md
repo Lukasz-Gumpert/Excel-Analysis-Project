@@ -108,6 +108,7 @@ Notably, there's a considerable salary gap between U.S. and non-U.S. positions, 
 - Using Power Pivot
 
 To analyze skill trends, I combined the data_jobs_all and data_jobs_skills tables into a unified data model using Power Pivot.
+
 Since the data was already cleaned and structured in Power Query, Power Pivot automatically recognized the relationship via the shared job_id field.
 
 A one-to-many relationship was established between the two tables based on the job_id column, enabling smooth cross-referencing between job listings and associated skills.
@@ -128,6 +129,36 @@ Additionally, technologies like AWS and Azure showed notable prominence, highlig
 
 By identifying the most commonly required skills, professionals can better align their development efforts with market demands — while educators and training providers can tailor curricula to focus on the tools that offer the most career value.
 
+## 4️⃣ Which Skills Are Tied to the Highest Salaries?
+## 📊 Skill: Advanced Pivot Charts
+
+### Building the Visualization
+
+I used a combo PivotChart to compare two key metrics: median salary and the frequency with which each skill appears across job listings.
+
+- Primary Y-Axis: Median Salary (displayed as clustered columns)
+
+- Secondary Y-Axis: Skill Occurrence Rate (%) (plotted as a line with markers)
+
+To improve clarity and aesthetics, I customized the chart: added chart and axis titles, replaced the default markers with diamonds, and removed the connecting lines to reduce clutter.
+
+![image](https://github.com/user-attachments/assets/d3551e15-5e5d-4e1a-93af-106b9c1d412b)
+
+### 📊 Analysis:
+
+Python, Oracle, and SQL stand out with the highest associated median salaries — indicating that these skills are strongly linked to better-paying opportunities in the tech field.
+
+In contrast, tools like PowerPoint and Word correlate with lower salaries and appear less frequently in high-value job postings, suggesting they're more common in lower-specialization roles.
+
+This visualization underscores the payoff of developing highly sought-after skills. Mastering technologies like Python and SQL can significantly improve your earning potential — especially valuable for those looking to advance in data and tech careers.
+
+## 🎯 Final Thoughts
+
+As a data-driven job seeker, I created this Excel-based project to better understand the current landscape of data-related careers. By analyzing a curated dataset of real job postings, I explored trends in job titles, salaries, geographic regions, and in-demand skills.
+
+Using Excel's powerful toolkit — including Power Query, Power Pivot, DAX, and advanced charting — I uncovered a strong connection between skill breadth and salary potential. Skills like Python, SQL, and cloud platforms (e.g., AWS and Azure) consistently ranked among the most valuable.
+
+I hope this analysis helps other data professionals and aspiring candidates focus their efforts on the most impactful technologies — and make informed decisions in an increasingly competitive job market.
 
 
 
