@@ -60,6 +60,7 @@ Each query underwent several cleaning and restructuring steps — I adjusted dat
 ### 📊 Analysis
 
 A clear trend emerged: job postings listing more required skills tended to offer higher median salaries — a pattern especially noticeable in roles like Senior Data Engineer and Data Scientist. 
+
 On the flip side, positions such as Business Analyst, which often list fewer required skills, generally came with lower salary offerings. This indicates that specialized or broader technical skill sets may be more highly valued in the job market.
 
 ![image](https://github.com/user-attachments/assets/f8a93c52-c770-4ba6-acef-6970767ce3e7)
@@ -68,23 +69,67 @@ The analysis suggests that expanding your skillset — particularly with in-dema
 
 ## 2️⃣ How Do Data Job Salaries Vary by Region?
 
-## Skill: PivotTables & DAX
+### 🧮 Skill: PivotTables & DAX
 
 ### Pivot Table Creation
 
 To explore regional salary differences, I used Power Pivot to build a data model and generated a PivotTable.
+
 I placed job_title_short into the row labels and used salary_year_avg as the values field to summarize the data.
+
+### Median Salary Calculation (DAX)
+
+To focus on the U.S. market, I introduced a custom measure that calculates the median annual salary for roles based in the United States:
+
+`
+=CALCULATE(
+    MEDIAN(data_jobs_all[salary_year_avg]),
+    data_jobs_all[job_country] = "United States")
+`
+
+Additionally, I created a general measure to compute the overall median salary using DAX:
+
+`
+Median Salary := MEDIAN(data_jobs_all[salary_year_avg])
+`
+
+### 📊 Analysis:
+
+![image](https://github.com/user-attachments/assets/2ed7efd6-d8c2-4d23-b974-c4cc6db4f065)
+
+Roles such as Senior Data Engineer and Data Scientist offer significantly higher median salaries both within the U.S. and abroad — a testament to the global demand for advanced data skills.
+
+Notably, there's a considerable salary gap between U.S. and non-U.S. positions, particularly in tech-heavy roles. This likely reflects the concentration of high-paying tech industries within the U.S. market.
+
+## 3️⃣ Which Skills Are Most In-Demand for Data Professionals?
+
+## 🔧 Skill: Power Pivot
+
+- Using Power Pivot
+
+To analyze skill trends, I combined the data_jobs_all and data_jobs_skills tables into a unified data model using Power Pivot.
+Since the data was already cleaned and structured in Power Query, Power Pivot automatically recognized the relationship via the shared job_id field.
+
+A one-to-many relationship was established between the two tables based on the job_id column, enabling smooth cross-referencing between job listings and associated skills.
 
 ![image](https://github.com/user-attachments/assets/6da43e9d-3ab6-4e77-946f-c7f681a7b5db)
 
+The Power Pivot interface made it easy to refine the model structure and define new measures for the analysis phase.
+
 ![image](https://github.com/user-attachments/assets/23b15f63-4af7-4861-bd23-037016517fe5)
 
+## 📊 Analysis:
 
-### 📊 Analysis
+SQL and Python emerged as the most frequently mentioned skills in data roles — a strong indicator of their core importance in data manipulation, querying, and analysis.
 
-Roles such as Senior Data Engineer and Data Scientist offer significantly higher median salaries both within the U.S. and abroad — a testament to the global demand for advanced data skills.
-Notably, there's a considerable salary gap between U.S. and non-U.S. positions, particularly in tech-heavy roles. This likely reflects the concentration of high-paying tech industries within the U.S. market.
+Additionally, technologies like AWS and Azure showed notable prominence, highlighting the growing demand for cloud-based and scalable data solutions.
 
-![image](https://github.com/user-attachments/assets/8b7d6392-8a40-4e58-b2c0-70a23fee4d41)
+![image](https://github.com/user-attachments/assets/7a61b873-b9a6-4830-8436-c44b41777043)
 
-Understanding these geographic salary trends is crucial for both professionals and employers. It supports more informed decision-making around job location, remote opportunities, and compensation negotiations in a globally distributed job market.
+By identifying the most commonly required skills, professionals can better align their development efforts with market demands — while educators and training providers can tailor curricula to focus on the tools that offer the most career value.
+
+
+
+
+
+
